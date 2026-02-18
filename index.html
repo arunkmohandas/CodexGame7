@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stack Hero</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="hud">
+      <div id="hud-level">Level: 1</div>
+      <div id="hud-score">Score: 0</div>
+      <button id="back-btn" class="small-btn">Menu</button>
+    </header>
+
+    <canvas id="gameCanvas" width="1000" height="560" aria-label="Stack Hero Game"></canvas>
+
+    <div id="overlay" class="overlay">
+      <section id="main-menu" class="panel active">
+        <h1>STACK HERO</h1>
+        <p class="subtitle">Stretch. Drop. Cross. Repeat.</p>
+        <div class="button-group">
+          <button id="start-btn">Start Game</button>
+          <button id="level-select-btn">Level Select</button>
+          <button id="music-toggle-btn">Music: ON</button>
+        </div>
+      </section>
+
+      <section id="level-select" class="panel">
+        <h2>Select Level</h2>
+        <div id="level-grid" class="level-grid"></div>
+        <button id="back-from-levels-btn">Back</button>
+      </section>
+
+      <section id="game-over" class="panel">
+        <h2>Game Over</h2>
+        <p id="final-score">Final Score: 0</p>
+        <div class="button-group">
+          <button id="restart-btn">Restart</button>
+          <button id="menu-btn">Back to Menu</button>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
